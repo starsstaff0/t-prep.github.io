@@ -91,20 +91,19 @@ header {
     color: #666;
 }
 .tasks {
-    padding: 15px; /* Внутренний отступ для списка */
+    padding: 10px; /* Внутренний отступ для списка */
     margin: 0;
-    background: linear-gradient(130deg, #e3e3e2, #ffffff); /* Цвет как у карточки */
     border-radius: 10px; /* Закругленные углы */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
-    text-align: center; /* Выравнивание текста по центру */
+    text-align: left;
+
 }
 
 .tasks li {
-    list-style: none; /* Убираем стандартные маркеры */
     padding: 5px 0; /* Отступы между строками */
     font-weight: bold; /* Жирный шрифт */
     color: #333; /* Цвет текста */
     transition: all 0.3s ease-in-out; /* Плавный эффект */
+    list-style-position: inside;
 }
 
 .social {
