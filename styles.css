@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/photo/bg1.jpg);
+    
+}
+header {
+    background-color: #FFDD2D;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+.background-wrapper {
+    max-width: 1700px; /* Чтобы контент не растягивался на весь экран */
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.description {
+    max-width: 800px; 
+    text-align: center; 
+    background: linear-gradient(130deg, #fff6d5, #ecd8ee); 
+    padding: 20px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: 40px auto; 
+}
+
+.description h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase; /* Делаем заглавными */
+    border-bottom: 3px solid #ffbb00; /* Подчеркивание */
+    display: inline-block; /* Чтобы подчеркивание было по ширине текста */
+    padding-bottom: 5px;
+}
+
+.description p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6; /* Улучшенная читаемость */
+    margin-top: 10px;
+}
+
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team-member {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(130deg, #e3e3e2, #ffffff);
+    transition: transform 0.3s ease;
+}
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.team-member h3 {
+    font-size: 19px;
+    margin: 10px 0;
+}
+.team-member p {
+    font-size: 16px;
+    color: #666;
+}
+.tasks {
+    padding: 15px; /* Внутренний отступ для списка */
+    margin: 0;
+    background: linear-gradient(130deg, #e3e3e2, #ffffff); /* Цвет как у карточки */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.tasks li {
+    list-style: none; /* Убираем стандартные маркеры */
+    padding: 5px 0; /* Отступы между строками */
+    font-weight: bold; /* Жирный шрифт */
+    color: #333; /* Цвет текста */
+    transition: all 0.3s ease-in-out; /* Плавный эффект */
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.telegram-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f0e4a8;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(101, 101, 101, 0.4);
+}
+
+.telegram-button img,
+.number img {
+    width: 20px;
+    height: 20px;
+    margin-top: 9px;
+}
+.telegram-button:hover,
+.number:hover {
+    background-color: #FFDD2D;
+    box-shadow: 0 6px 15px rgba(92, 92, 93, 0.6);
+}
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px auto;
+    gap: 8px;
+    background-color: #f0e4a8;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(101, 101, 101, 0.4);
+    width: 180px;
+}
+
