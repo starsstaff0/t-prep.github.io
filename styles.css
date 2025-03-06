@@ -61,57 +61,83 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch; /* Растягиваем карточки */
 }
 .team-member {
     background-color: white;
+    align-items: center;
     margin: 20px;
     padding: 20px;
     width: 300px;
+    height: 670px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: linear-gradient(130deg, #e3e3e2, #ffffff);
     transition: transform 0.3s ease;
+    
+    display: flex;
+    flex-direction: column;
+
 }
 .team-member:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 .team-member img {
     width: 100%;
     border-radius: 50%;
     margin-bottom: 10px;
 }
+
 .team-member h3 {
     font-size: 19px;
-    margin: 10px 0;
+    margin: 5px 0;
 }
+
 .team-member p {
     font-size: 16px;
     color: #666;
+    margin-bottom: 10px; 
 }
-.tasks {
-    padding: 10px; /* Внутренний отступ для списка */
-    margin: 0;
-    border-radius: 10px; /* Закругленные углы */
-    text-align: left;
 
+
+.team-member .content {
+    flex-grow: 1; /* Растягивает контент */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Чтобы список не раздвигал карточку */
+}
+
+
+.tasks {
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    text-align: left;
+    width: 100%;
+    padding-left: 0;
+    max-height: 80px;
 }
 
 .tasks li {
-    padding: 5px 0; /* Отступы между строками */
-    font-weight: bold; /* Жирный шрифт */
-    color: #333; /* Цвет текста */
-    transition: all 0.3s ease-in-out; /* Плавный эффект */
+    padding: 5px 0;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease-in-out;
     list-style-position: inside;
+    align-items: left;
 }
 
-.social {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+
+/* Фиксация кнопок внизу карточки */
+.social,
+.number {
+    margin-top: auto;
 }
 
+/* Стили для кнопки "Написать" */
 .telegram-button {
     display: flex;
     align-items: center;
@@ -133,16 +159,19 @@ header {
     height: 20px;
     margin-top: 9px;
 }
+
 .telegram-button:hover,
 .number:hover {
     background-color: #FFDD2D;
     box-shadow: 0 6px 15px rgba(92, 92, 93, 0.6);
 }
+
+/* Стили для номера телефона */
 .number {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 18px auto;
+    margin-top: 10px; 
     gap: 8px;
     background-color: #f0e4a8;
     color: black;
