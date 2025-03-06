@@ -80,7 +80,10 @@ header {
     flex-direction: column;
 
 }
-
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
 
 .team-member img {
     width: 100%;
